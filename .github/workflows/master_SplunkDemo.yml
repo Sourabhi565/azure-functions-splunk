@@ -39,5 +39,6 @@ jobs:
         with:
           app-name: 'SplunkDemo'
           slot-name: 'Production'
-          package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          #package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          package: D:\a\azure-functions-splunk\event-hubs-hec/package.json
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_782010AF411D4825BF30DC0F8964C78A }}
